@@ -1,0 +1,56 @@
+
+#yum install  -y aws-cli
+#aws configure
+AWS Access Key ID [None]: YOUR_KEY_ID
+AWS Secret Access Key [None]: YOUR_PASSWORD
+Default region name [None]: us-west-2
+Default output format [None]:
+[root@code_deploy]# aws s3 cp s3://aws-codedeploy-us-west-2/latest/install . --region us-west-2
+[root@code_deploy]# ./install auto
+I, [2015-05-25T09:52:38.496581 #7133]  INFO -- : Starting update check.
+I, [2015-05-25T09:52:38.496822 #7133]  INFO -- : Attempting to automatically detect supported package manager type for system...
+I, [2015-05-25T09:52:38.504683 #7133]  INFO -- : Checking AWS_REGION environment variable for region information...
+I, [2015-05-25T09:52:38.504751 #7133]  INFO -- : Checking EC2 metadata service for region information...
+I, [2015-05-25T09:52:38.548260 #7133]  INFO -- : Downloading version file from bucket aws-codedeploy-us-west-2 and key latest/VERSION...
+I, [2015-05-25T09:52:38.579388 #7133]  INFO -- : Downloading package from bucket aws-codedeploy-us-west-2 and key releases/codedeploy-agent-1.0-1.719.noarch.rpm...
+I, [2015-05-25T09:52:38.671371 #7133]  INFO -- : Executing `/usr/bin/yum -y localinstall /tmp/codedeploy-agent-1.0-1.719.noarch.rpm`...
+Loaded plugins: priorities, update-motd, upgrade-helper
+Examining /tmp/codedeploy-agent-1.0-1.719.noarch.rpm: codedeploy-agent-1.0-1.719.noarch
+Marking /tmp/codedeploy-agent-1.0-1.719.noarch.rpm to be installed
+Resolving Dependencies
+amzn-main/latest                                                                                                                                 | 2.1 kB     00:00
+amzn-updates/latest                                                                                                                              | 2.3 kB     00:00
+--> Running transaction check
+---> Package codedeploy-agent.noarch 0:1.0-1.719 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================================================================================================
+ Package                                 Arch                          Version                          Repository                                                 Size
+========================================================================================================================================================================
+Installing:
+ codedeploy-agent                        noarch                        1.0-1.719                        /codedeploy-agent-1.0-1.719.noarch                         10 M
+
+Transaction Summary
+========================================================================================================================================================================
+Install  1 Package
+
+Total size: 10 M
+Installed size: 10 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : codedeploy-agent-1.0-1.719.noarch                                                                                                                    1/1
+Starting codedeploy-agent:Installing codedeploy-agent auto-update cron in '/etc/cron.d/codedeploy-agent-update'...
+Installing codedeploy-agent auto-update cron in '/etc/cron.d/codedeploy-agent-update'...Complete
+  Verifying  : codedeploy-agent-1.0-1.719.noarch                                                                                                                    1/1
+
+Installed:
+  codedeploy-agent.noarch 0:1.0-1.719
+
+Complete!
+I, [2015-05-25T09:52:40.068393 #7133]  INFO -- : Update check complete.
+I, [2015-05-25T09:52:40.068474 #7133]  INFO -- : Stopping updater.
