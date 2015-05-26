@@ -54,15 +54,4 @@ shutdown -h now
 
 exit 0
 
-########################################################################
-#
-# For more information about this code, please read:
-#
-#   Running EC2 Instances on a Recurring Schedule with Auto Scaling
-#   http://alestic.com/2011/11/ec2-schedule-instance
-#
-# The code and its license are available on github:
-#
-#   https://github.com/alestic/demo-ec2-schedule-instance
-#
-########################################################################
+
