@@ -57,6 +57,7 @@ aws autoscaling create-auto-scaling-group --auto-scaling-group-name basic-auto-s
 basic-launch-config --min-size 1 --max-size 3 --vpc-zone-identifier subnet-41767929c
 
 The following create-auto-scaling-group command launches an Auto Scaling group and configures it to use Elastic Load Balancing:
+  
 aws autoscaling create-auto-scaling-group --auto-scaling-group-name extended-auto-scaling-group-2 --launch-configuration-name
 basic-launch-config-3 --load-balancer-names "sample-lb" --health-check-type ELB --health-check-grace-period 120
 
