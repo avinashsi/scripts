@@ -39,7 +39,8 @@ The following example creates a launch configuration and assigns it a key pair a
 aws autoscaling create-launch-configuration --launch-configuration-name detailed-launch-config --key-name qwikLABS-L238-20080 --image-id ami-c6169af6 --instance-type m1.small --user-data file://labuserdata.txt
 
 
-The following example creates a launch configuration based on an existing instance. In addition, it also specifies launch configuration attributes such as a security group, tenancy, Amazon EBS optimization, and bootstrapping script:
+The following example creates a launch configuration based on an existing instance. In addition, it also specifies
+launch configuration attributes such as a security group, tenancy, Amazon EBS optimization, and bootstrapping script:
 
 aws autoscaling create-launch-configuration --launch-configuration-name detailed-launch-config --key-name qwikLABS-L238-20080
 --instance-id i-7e13c876 --security-groups sg-eb2af88e --instance-type m1.small --user-data file://labuserdata.txt --instance-monitoring Enabled=true --no-ebs-optimized 
@@ -61,7 +62,9 @@ The following create-auto-scaling-group command launches an Auto Scaling group a
 aws autoscaling create-auto-scaling-group --auto-scaling-group-name extended-auto-scaling-group-2 --launch-configuration-name
 basic-launch-config-3 --load-balancer-names "sample-lb" --health-check-type ELB --health-check-grace-period 120
 
-The following create-auto-scaling-group command launches an Auto Scaling group. It specifies Availability Zones (using the availability-zones parameter) instead of subnets. It also launches any instances into a placement group and sets the termination policy to terminate the oldest instances first:
+The following create-auto-scaling-group command launches an Auto Scaling group. It specifies 
+Availability Zones (using the availability-zones parameter) instead of subnets. It also 
+launches any instances into a placement group and sets the termination policy to terminate the oldest instances first:
 
 aws autoscaling create-auto-scaling-group --auto-scaling-group-name extended-auto-scaling-group-2 --launch-configuration-name 
 basic-launch-config-3 --min-size 1 --max-size 3 --desired-capacity 2 --default-cooldown 600 --placement-group 
