@@ -8,7 +8,7 @@ for linux : grep SpotPrice stats.txt
 
 
 
-
+######   http://www.cardinalpath.com/autoscaling-your-website-with-amazon-web-services-part-2/ ################
 
 
 
