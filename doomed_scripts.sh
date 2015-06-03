@@ -9,7 +9,7 @@ for linux : grep SpotPrice stats.txt
 
 
 ######   http://www.cardinalpath.com/autoscaling-your-website-with-amazon-web-services-part-2/ ################
-
+######   http://www.techrepublic.com/blog/the-enterprise-cloud/aws-auto-scaling-add-notification-and-test-to-see-what-happens/  #####
 
 
 1. aws autoscaling create-launch-configuration --launch-configuration-name "new-launch-configuration-name" --image-id "new-AMI-id"
