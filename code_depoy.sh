@@ -1,4 +1,4 @@
-[root@ip-172-31-12-192 opt]# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 gpg: keyring `/root/.gnupg/secring.gpg' created
 gpg: requesting key D39DC0E3 from hkp server keys.gnupg.net
 gpg: /root/.gnupg/trustdb.gpg: trustdb created
@@ -246,7 +246,7 @@ Complete!
 2.6.32-431.23.3.el6.centos.plus.x86_64
 # reboot
 
-Broadcast message from root@ip-172-31-12-192
+Broadcast message from ip
         (/dev/pts/0) at 9:25 ...
 
 The system is going down for reboot NOW!
@@ -588,6 +588,6 @@ Installed:
 Complete!
 I, [2015-06-15T09:32:32.678572 #2879]  INFO -- : Update check complete.
 I, [2015-06-15T09:32:32.678642 #2879]  INFO -- : Stopping updater.
-[root@ip-172-31-12-192 ~]# /etc/init.d/codedeploy-agent status
+# /etc/init.d/codedeploy-agent status
 The AWS CodeDeploy agent is running as PID 2904
 
