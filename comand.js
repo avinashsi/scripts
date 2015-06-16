@@ -16,9 +16,9 @@ var genericpool = require("generic-pool");
                 create: function (callback) {
                         var client = mysql.createConnection({
                                 host: 'localhost',
-                                database: 'telematics_development',
+                                database: 'db_name',
                                 user: 'root',
-                                password: 'paxcel@123'
+                                password: 'passwd'
                         });
                         client.connect(function (error) {
                                 if (error) {
