@@ -1,3 +1,6 @@
+http://cloudacademy.com/blog/how-to-deploy-application-code-from-s3-using-aws-codedeploy/
+
+
 GET SPOT_INSTANCES_PRICE_LIST
 
 aws ec2 describe-spot-price-history --instance-types m1.xlarge --product-description Linux/UNIX --start-time 2015-05-26T07:08:09 --end-time 2015-05-27T07:08:09  --region us-west-2 > aws ec2 describe-spot-price-history --instance-types m1.xlarge --product-description Linux/UNIX --start-time 2015-05-26T07:08:09 --end-time 2015-05-27T07:08:09  --region us-west-2 > stats.txt
