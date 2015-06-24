@@ -1,0 +1,12 @@
+#updating autoscaling group -- launch configuration
+
+
+aws autoscaling update-auto-scaling-group --auto-scaling-group-name group_name --launch-configuration-name launch_configuration name
+
+
+# updating autoscaling group termination policy This one will terminate the newsest instance first.
+
+
+aws autoscaling update-auto-scaling-group --auto-scaling-group-name presto_slave --termination-policies "newestInstance"
+
+
