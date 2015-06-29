@@ -1,0 +1,1 @@
+s3cmd del s3://bucketname/objectname --recursive
