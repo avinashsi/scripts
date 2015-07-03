@@ -1,4 +1,4 @@
-#Shell script to changet the name of directory of particular pattern 
+#Shell script to change the name of directory of particular pattern 
 
 
 #!/bin/bash
