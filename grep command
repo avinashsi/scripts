@@ -1,7 +1,7 @@
 Grep Link 
 
 http://unix.stackexchange.com/questions/165204/get-parts-of-string-using-shell-script
-
+http://unix.stackexchange.com/questions/31753/how-to-run-grep-on-a-single-column
 
 cut -d '/' -f 3,5 <<< "/ip/192.168.0.1/port/8080/"|tr -s '/' ' '
 
