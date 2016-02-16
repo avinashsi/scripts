@@ -1,0 +1,10 @@
+Grep Link 
+
+http://unix.stackexchange.com/questions/165204/get-parts-of-string-using-shell-script
+
+
+cut -d '/' -f 3,5 <<< "/ip/192.168.0.1/port/8080/"|tr -s '/' ' '
+
+
+
+ grep -F "pathfinderservice-" index.html |tail -1|cut -d:  -f 3,5 <<< " 8081/nexus/content/repositories/pathtracker_dev1/pathfinderservice/-/pathfinderservice-0.0.2.tgz"|tr -s '/' ' ' | tr -s '8081' ' ' |tr -s 'nexus' ' '| tr -s 'content' ' '| tr -s 'repositories' ' '| tr -s 'pathtracker_dev' ' '| tr -s 'pathfinderservice' ' '| tr -s '-' ' '| tr -s 'tgz' ' '
