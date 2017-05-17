@@ -5,3 +5,8 @@ http://learn-automation.com/import-and-export-jobs-in-jenkins/
 https://github.com/hubspotdevops/puppet-nexus/blob/master/manifests/service.pp
 
 https://github.com/jenkinsci/puppet-jenkins/tree/master/manifests
+
+
+nexsus Plugin 
+
+https://support.sonatype.com/hc/en-us/articles/227256688-How-do-I-configure-the-Nexus-Jenkins-Plugin
