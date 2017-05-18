@@ -88,5 +88,6 @@ https://docs.puppet.com/puppet/latest/types/exec.html
 
 
 
-
+#####H########
+https://github.com/jenkinsci/puppet-jenkins/blob/master/manifests/cli.pp
 
