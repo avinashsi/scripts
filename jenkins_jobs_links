@@ -38,5 +38,25 @@ http://xn--thibaud-dya.fr
 http://xn--thibaud-dya.fr/jenkins_credentials.html
 
 
+
+
+Jenkins Password Encryption 
+
+############################
+
+import hudson.util.Secret
+
+Secret a = Secret.fromString('my secret value')
+String ciphertext = a.getEncryptedValue()
+println ciphertext
+// '{AQAAABAAAAAQdIQUuG2AhKoV7mCIcd3PXBdw8ItgchIrvQrQ=}'
+// or similar; will change with each new secret object
+
+Secret b = Secret.decrypt(ciphertext)
+String plaintext = b.getPlainText()
+println plaintext
+// 'my secret value'
+
+
 #delay
 http://stackoverflow.com/posts/42776001/edit
