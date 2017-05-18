@@ -67,3 +67,26 @@ println plaintext
 
 #delay
 http://stackoverflow.com/posts/42776001/edit
+
+#######################################
+1805201714:30
+https://ask.puppet.com/question/13270/how-to-execute-a-linux-command-and-assign-the-value-to-a-variable-in-puppet/  explaning Facter 
+
+custom facter Documentation 
+
+https://docs.puppet.com/facter/3.6/fact_overview.html
+https://ask.puppet.com/question/16823/how-i-can-store-the-output-of-a-linux-command-in-a-variable/
+
+
+
+
+https://serverfault.com/questions/624089/puppet-read-output-of-command-and-store-in-a-variable
+
+http://stackoverflow.com/questions/13077241/execute-combine-multiple-linux-commands-in-one-line
+https://docs.puppet.com/puppet/latest/types/exec.html
+
+
+
+
+
+
