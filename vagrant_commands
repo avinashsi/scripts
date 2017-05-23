@@ -1,0 +1,57 @@
+		console.log("Environment state : " + combination);
+		var commands = {
+			"0000":"vagrant up",
+			"0001":"vagrant reload --provision",
+			"0010":"vagrant up --provision",
+			"0011":"vagrant provision --provision-with shell",
+			"0100":"vagrant up --provision",
+			"0101":"vagrant provision",
+			"0110":"vagrant up --provision",
+			"0111":"vagrant up --provision",
+			"1000":"vagrant up",
+			"1001":"vagrant reload",
+			"1010":"vagrant reload --provision",
+			"1011":"vagrant reload --provision",
+			"1100":"vagrant reload --provision",
+			"1101":"vagrant reload --provision",
+			"1110":"vagrant up --provision",
+			"1111":"vagrant reload --provision",
+			"0003":"vagrant up --provision",
+			"0013":"vagrant up --provision",
+			"0103":"vagrant up --provision",
+			"0113":"vagrant up --provision",
+			"1003":"vagrant up --provision",
+			"1013":"vagrant up --provision",
+			"1103":"vagrant up --provision",
+			"1113":"vagrant up --provision"
+			
+		};
+		return commands[combination];	
+	}
+	$scope.fetchVagrantCommandForDocker = function(combination){
+		console.log("Environment state : " + combination);
+		var commands = {
+			"0000":"vagrant up --provider=docker",
+			"0001":"vagrant reload --provision",
+			"0010":"vagrant up --provision --provider=docker",
+			"0011":"vagrant provision --provision-with shell",
+			"0100":"vagrant up --provision --provider=docker",
+			"0101":"vagrant provision",
+			"0110":"vagrant up --provision --provider=docker",
+			"0111":"vagrant provision",
+			"1000":"vagrant up --provider=docker",
+			"1001":"vagrant reload",
+			"1010":"vagrant up --provision --provider=docker",
+			"1011":"vagrant reload --provision",
+			"1100":"vagrant reload --provision",
+			"1101":"vagrant reload --provision",
+			"1110":"vagrant up --provision --provider=docker",
+			"1111":"vagrant reload --provision",
+			"0003":"vagrant up --provision --provider=docker",
+			"0013":"vagrant up --provision --provider=docker",
+			"0103":"vagrant up --provision --provider=docker",
+			"0113":"vagrant up --provision --provider=docker",
+			"1003":"vagrant up --provision --provider=docker",
+			"1013":"vagrant up --provision --provider=docker",
+			"1103":"vagrant up --provision --provider=docker",
+			"1113":"vagrant up --provision --provider=docker"
